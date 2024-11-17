@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trillion Checkboxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mode-selector">
+            <button id="playAlone">Play Alone</button>
+            <button id="playGlobal">Play with the World</button>
+        </div>
+        <div class="game-info">
+            <span id="mode-display">Mode: Solo</span>
+            <span id="coordinates">Position: 0, 0</span>
+        </div>
+        <canvas id="checkboxCanvas"></canvas>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
